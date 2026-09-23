@@ -52,4 +52,12 @@ Portiva otomatik güncelleme denetlemez veya indirme yapmaz. Yeni sürümü **Re
 
 Her sürümde `SHA256SUMS.txt` yayımlanır. DMG ve bu dosyayı aynı klasöre indirdikten sonra Terminal'de o klasörde `shasum -a 256 -c SHA256SUMS.txt` çalıştırabilirsiniz. Sonuç `OK` olmalıdır. Sağlama toplamı dosya bütünlüğünü kontrol eder; Apple notarization yerine geçmez.
 
-Bu depo kurulum paketlerini, kullanım açıklamalarını ve sürüm notlarını dağıtır.
+## Kaynak kod ve geliştirme
+
+Swift/SwiftUI kaynak kodu, Xcode projesi, testler ve paketleme betikleri bu depodadır.
+`Portiva.xcodeproj` dosyasını Xcode ile açın; **Portiva / My Mac** hedefini seçin.
+İmzalı yerel derleme için Signing & Capabilities bölümünde kendi Apple takımınızı seçin.
+SwiftTerm bağımlılığı ve shader derlemesi için Xcode Metal Toolchain bileşeni gerekir.
+
+Ayrıntılı derleme ve test adımları için [geliştirici belgesine](DEVELOPMENT.md) bakın.
+Kurulum dosyaları [Releases](https://github.com/CanBasmaci/portiva-releases/releases) bölümündedir.

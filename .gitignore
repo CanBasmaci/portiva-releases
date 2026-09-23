@@ -1,0 +1,19 @@
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+
+dist/
+
+# Local credentials and release artifacts
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile
+*.dmg
+*.zip
+*.xcarchive/

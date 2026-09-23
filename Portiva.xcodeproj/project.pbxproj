@@ -1,0 +1,47 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000074 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViews.swift; sourceTree = "<group>"; };
+000000000000000000000075 = { isa = PBXBuildFile; fileRef = 000000000000000000000074; };
+000000000000000000000072 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRecorder.swift; sourceTree = "<group>"; };
+000000000000000000000073 = { isa = PBXBuildFile; fileRef = 000000000000000000000072; };
+000000000000000000000070 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSession.swift; sourceTree = "<group>"; };
+000000000000000000000071 = { isa = PBXBuildFile; fileRef = 000000000000000000000070; };
+00000000000000000000006E = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
+00000000000000000000006F = { isa = PBXBuildFile; fileRef = 00000000000000000000006E; };
+000000000000000000000060 = { isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+000000000000000000000061 = { isa = PBXBuildFile; fileRef = 000000000000000000000060; };
+
+00000000000000000000005C = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+00000000000000000000005D = { isa = PBXBuildFile; fileRef = 00000000000000000000005C; };
+00000000000000000000005A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalHost.swift; sourceTree = "<group>"; };
+00000000000000000000005B = { isa = PBXBuildFile; fileRef = 00000000000000000000005A; };
+000000000000000000000050 = { isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/migueldeicaza/SwiftTerm"; requirement = { kind = exactVersion; version = 1.19.0; }; };
+000000000000000000000051 = { isa = XCSwiftPackageProductDependency; package = 000000000000000000000050; productName = SwiftTerm; };
+000000000000000000000052 = { isa = PBXBuildFile; productRef = 000000000000000000000051; };
+
+
+
+00000000000000000000003C = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+00000000000000000000003D = { isa = PBXBuildFile; fileRef = 00000000000000000000003C; };
+00000000000000000000000A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortivaApp.swift; sourceTree = "<group>"; };
+000000000000000000000014 = { isa = PBXBuildFile; fileRef = 00000000000000000000000A; };
+00000000000000000000000B = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+000000000000000000000015 = { isa = PBXBuildFile; fileRef = 00000000000000000000000B; };
+00000000000000000000000C = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialConnection.swift; sourceTree = "<group>"; };
+000000000000000000000016 = { isa = PBXBuildFile; fileRef = 00000000000000000000000C; };
+000000000000000000000001 = { isa = PBXProject; packageReferences = (000000000000000000000050); attributes = { LastUpgradeCheck = 2700; }; buildConfigurationList = 000000000000000000000028; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; knownRegions = (en, Base); mainGroup = 000000000000000000000002; productRefGroup = 000000000000000000000004; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000005); };
+000000000000000000000002 = { isa = PBXGroup; children = (000000000000000000000003, 000000000000000000000004); sourceTree = "<group>"; };
+000000000000000000000003 = { isa = PBXGroup; children = (00000000000000000000000A, 00000000000000000000000B, 00000000000000000000000C, 00000000000000000000005A, 00000000000000000000005C, 000000000000000000000060, 00000000000000000000006E, 000000000000000000000070, 000000000000000000000072, 000000000000000000000074, 00000000000000000000003C); path = Portiva; sourceTree = "<group>"; };
+000000000000000000000004 = { isa = PBXGroup; children = (000000000000000000000006); name = Products; sourceTree = "<group>"; };
+000000000000000000000005 = { isa = PBXNativeTarget; packageProductDependencies = (000000000000000000000051); buildConfigurationList = 000000000000000000000029; buildPhases = (000000000000000000000007, 000000000000000000000008, 000000000000000000000009); buildRules = (); dependencies = (); name = Portiva; productName = Portiva; productReference = 000000000000000000000006; productType = "com.apple.product-type.application"; };
+000000000000000000000006 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+000000000000000000000007 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000014, 000000000000000000000015, 00000000000000000000005B, 00000000000000000000005D, 00000000000000000000006F, 000000000000000000000071, 000000000000000000000073, 000000000000000000000075, 000000000000000000000016); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000008 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000052); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000009 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000003D, 000000000000000000000061); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000028 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000032, 000000000000000000000033); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000029 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000034, 000000000000000000000035); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000032 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 13.0; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; }; };
+000000000000000000000033 = { isa = XCBuildConfiguration; name = Release; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 13.0; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; }; };
+000000000000000000000034 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.can.CanSerial; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = Portiva/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = Portiva; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools"; CODE_SIGN_STYLE = Manual; CODE_SIGN_IDENTITY = "Apple Development"; DEVELOPMENT_TEAM = 685HP5848K; ENABLE_APP_SANDBOX = NO; ENABLE_HARDENED_RUNTIME = YES; SWIFT_EMIT_LOC_STRINGS = YES; MARKETING_VERSION = 0.6.1; CURRENT_PROJECT_VERSION = 7; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; }; };
+000000000000000000000035 = { isa = XCBuildConfiguration; name = Release; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.can.CanSerial; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = Portiva/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = Portiva; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools"; CODE_SIGN_STYLE = Manual; CODE_SIGN_IDENTITY = "Apple Development"; DEVELOPMENT_TEAM = 685HP5848K; ENABLE_APP_SANDBOX = NO; ENABLE_HARDENED_RUNTIME = YES; SWIFT_EMIT_LOC_STRINGS = YES; MARKETING_VERSION = 0.6.1; CURRENT_PROJECT_VERSION = 7; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; };
+}; rootObject = 000000000000000000000001; }

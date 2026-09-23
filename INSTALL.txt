@@ -1,0 +1,39 @@
+Portiva 0.6.1 — macOS 13 veya üzeri
+
+KURULUM
+1. Portiva-0.6.1.dmg dosyasını açın.
+2. Portiva uygulamasını Applications klasörüne sürükleyin.
+3. Applications içinden Portiva'ı açın; disk imajını çıkarabilirsiniz.
+
+KULLANIM
+USB/serial console kablosunu takın, portu seçin. Cihazın belgelerinde
+belirtilen baud değerini elle yazın. Data bits, parity, stop bits ve flow
+control ayarlarını cihazınıza göre belirleyip Bağlan'a basın.
+İsteğe bağlı cihaz ailesi sorguları önizleme sonrasında gönderilir.
+Baud alanı elle girilir; otomatik yapılandırma uygulanmaz.
+
+Bu kişisel geliştirme paketi Apple Development ile imzalıdır; Apple Developer ID ile
+imzalanıp notarize edilmedi. Başka Mac'lerde Gatekeeper uyarısı çıkabilir.
+
+Seri konsolu olan ve macOS tarafından port olarak tanınan cihazlar
+hedeflenir. Gereken USB sürücüsü kablo üreticisine bağlıdır.
+Her switch modeliyle fiziksel uyumluluk henüz doğrulanmadı.
+ANSI/VT terminal emülasyonu, doğrudan klavye girişi, ok tuşları ve Tab desteklenir.
+SSH sekmesinde adres ve kullanıcı girin; kimlik doğrulama terminaldedir.
+Telnet desteklenmez. Üstteki + ile bağımsız oturumlar açabilirsiniz.
+Profiller ve komut kitaplığı yerel olarak kaydedilir; parola kaydedilmez.
+Çok satırlı yapıştırma önce önizlenir. Yapılandırma karşılaştırma Araçlar bölümündedir.
+Oturum kaydı cihaz çıktısını dosyaya yazar; parola isteminde duraklar.
+Cihazın gösterdiği yapılandırmalar hassas bilgi içerebilir.
+
+GİZLİ GİRİŞ
+Portiva > Ayarlar veya sol alttaki Ayarlar düğmesinden komut/parola
+alanını gizlemeyi açıp kapatabilirsiniz. Bu ayar yalnızca alt giriş alanını
+maskeler; cihazın geri gönderdiği çıktı değişmez. Terminal yerel yankı yapmaz.
+
+GÜNCELLEMELER
+Yeni sürümler GitHub Releases üzerinden DMG olarak indirilir:
+https://github.com/CanBasmaci/portiva-releases/releases/latest
+Portiva bağlantılarını kapatıp uygulamadan çıkın. Yeni DMG içindeki
+Portiva'yı Applications klasörüne sürükleyin ve mevcut uygulamayı değiştirin.
+Uygulama kendi kendine güncelleme denetlemez veya indirme yapmaz.
