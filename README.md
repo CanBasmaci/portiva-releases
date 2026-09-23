@@ -18,8 +18,6 @@ macOS için serial ve SSH console uygulaması. USB console bağlantıları, bağ
 4. **Portiva** uygulamasını aynı penceredeki **Applications / Uygulamalar** klasörüne sürükleyin.
 5. Uygulamayı **Uygulamalar** klasöründen açın. Ardından Portiva disk imajını çıkarabilirsiniz.
 
-**İmza durumu:** Bu sürüm Apple Development sertifikasıyla imzalı bir test paketidir. Developer ID imzası ve Apple notarization içermez. Başka Mac'lerde Gatekeeper uyarısı veya açılış engeli olabilir; herkesin Mac'inde sorunsuz kurulum henüz garanti edilmez. Açılmazsa macOS sürümüyle birlikte hata mesajını [Issues](https://github.com/CanBasmaci/portiva-releases/issues) bölümünde paylaşabilirsiniz. Parola veya cihaz yapılandırmanızdaki gizli bilgileri paylaşmayın.
-
 ## İlk seri bağlantı
 
 1. Console kablosunu Mac'e ve cihazın console portuna takın.
@@ -27,8 +25,6 @@ macOS için serial ve SSH console uygulaması. USB console bağlantıları, bağ
 3. **Baud** değerini elle girin; veri biti, parity, stop biti ve akış kontrolünü cihazınızın belgelerine göre ayarlayın.
 4. **Bağlan** düğmesine basın, terminale tıklayıp Enter gönderin.
 5. İsterseniz bağlantıya ad vererek **Profili kaydet** ile ayarları saklayın.
-
-Aruba 6100 için bu projede kullanılan ayarlar: **115200 baud, 8 veri biti, parity None, 1 stop biti, akış kontrolü None**. Diğer modellerde cihazın kendi ayarlarını kullanın. Kullanıcı tarafından Aruba 6100 üzerinde VLAN yapılandırması test edilmiştir; tüm switch modelleri test edilmemiştir.
 
 ## SSH bağlantısı
 
@@ -43,10 +39,6 @@ Aruba 6100 için bu projede kullanılan ayarlar: **115200 baud, 8 veri biti, par
 - **Ayarlar → gizli giriş:** Alt komut/parola alanını maskeler. Cihazın geri gönderdiği metni gizlemez. Gizli giriş açıkken çok satırlı yapıştırma engellenir.
 - **Yapılandırma karşılaştırma:** İki metin/dosya veya terminal çıktısı arasındaki satır farklarını gösterir ve dışa aktarır.
 - **Cihaz ailesi:** Aruba AOS-CX, Cisco IOS/IOS-XE ve Juniper Junos için VLAN/interface/MAC sorgularını önizlemeyle sunar. Sonuçlar terminalde görünür. Diğer cihazlarda Genel seçilebilir.
-
-## Yeni sürüme geçiş
-
-Portiva otomatik güncelleme denetlemez veya indirme yapmaz. Yeni sürümü **Releases** sayfasından indirin; açık bağlantıları kapatıp Portiva'dan çıkın. Yeni DMG içindeki uygulamayı Uygulamalar klasörüne sürükleyip mevcut uygulamayı değiştirin. Aynı uygulama kimliğiyle ayarlar korunur; profiller ve komutlar `~/Library/Application Support/Portiva/` altında tutulur.
 
 ## İndirme doğrulaması
 
